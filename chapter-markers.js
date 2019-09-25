@@ -7,7 +7,7 @@ videojs.registerPlugin('chapterMarkers', function() {
     player.el().appendChild(overlay);
   });
 
-player.on("loadedmetadata", function() {
+videojs.getPlayer("vjs_video_3").on("loadedmetadata", function() {
     var myPlayer = this,
       videoDuration,
       cuesAra = [],
